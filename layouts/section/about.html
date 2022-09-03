@@ -6,11 +6,11 @@
   <div class="content">
     {{ .Content }}
   </div>
-  <h2 class="subtitle is-size-5-mobile is-size-4-desktop">Frequent Tags</h2>
+  <!-- <h2 class="subtitle is-size-5-mobile is-size-4-desktop">Frequent Tags</h2>
   {{ range .Site.Taxonomies.tags.ByCount }}
     <a href="/tags/{{ .Name | urlize }}"> {{ .Name }} ({{ .Count }}) &nbsp;</a>
-  {{end}}
+  {{end}} -->
 </div>
-{{ partial "jsshare" . }}
+<!-- {{ partial "jsshare" . }} -->
 {{ partial "disqus" . }}
 {{ partial "footer" . }}
